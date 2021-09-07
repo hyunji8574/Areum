@@ -1,0 +1,91 @@
+/*
+Common Style
+*/
+
+// colors
+$color-white: #ffffff;
+$color-orange: #ffb33b;
+$color-black: #474c55;
+$color-gray: #91a0af;
+$color-back: #f7f7f7;
+
+// logo
+$logo: url ("/img/logo.png");
+
+// fonts
+@font-face {
+    font: {
+        family: "NanumSquare";
+        weight: normal;
+    }
+    src: url("../fonts/NanumSquareRoundOTFR.otf");
+}
+@font-face {
+    font: {
+        family: "NanumSquare";
+        weight: bold;
+    }
+    src: url("../fonts/NanumSquareRoundOTFB.otf");
+}
+@font-face {
+    font: {
+        family: "NanumSquare";
+        weight: 900;
+    }
+    src: url("../fonts/NanumSquareRoundOTFEB.otf");
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font: {
+        weight: normal;
+        size: 16px;
+        family: "NanumSquare", "Nanum Gothic";
+    }
+    color: $color-black;
+    background-color: $color-white;
+    overflow-x: hidden;
+    word-break: keep-all;
+}
+
+.grid {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
+.section {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+a {
+    color: $color-black;
+}
+
+/*
+믹스인
+*/
+
+@mixin flex-three($gap) {
+    display: flex;
+    justify-content: center;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 0 $gap;
+}

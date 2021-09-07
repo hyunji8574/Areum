@@ -1,0 +1,14 @@
+
+/*
+
+메인페이지 (index) 스타일 통합 시트
+css 폴더 내에 index.css로 컴파일됨
+
+*/
+
+@import "./common/reset";
+@import "./common/common";
+@import "./common/header";
+@import "./common/footer";
+@import "./style/index-layout";
+@import "./style/index-layout-responsive";

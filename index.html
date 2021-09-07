@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREUM</title>
+    <!-- 
+        스타일시트
+     -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 
+        스크립트
+     -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/index-slider.js"></script>
+
+</head>
+
+<body>
+    <!-- 
+        헤더 시작
+     -->
+    <header class="header">
+        <div class="grid">
+            <h1 class="logo"><a href="index.html">AREUM</a></h1>
+            <ul class="gnb menu">
+                <li><a href="brand.html">BRAND</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+            </ul>
+            <ul class="gnb icons">
+                <li><a href="#">search</a></li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">darkmode</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 
+        헤더 끝
+     -->
+
+    <section class="visual">
+        <!-- 비주얼 섹션 -->
+        <!-- 메인 슬라이드 이미지 리스트 -->
+        <!-- 
+            현재 표시되는 슬라이드는 li에 on 클래스가 붙음
+         -->
+        <ul class="visual-slide-img-list">
+            <li class="slide-img01 on"></li>
+            <li class="slide-img02"></li>
+            <li class="slide-img03"></li>
+            <li class="slide-img04"></li>
+        </ul>
+        <div class="grid">
+            <!-- 메인 슬라이드 좌우 버튼 -->
+            <div class="slide-arrow">
+                <button class="left"></button>
+                <button class="right"></button>
+            </div>
+            <!-- 메인 슬라이드 하단 네비게이션 -->
+            <ul class="slide-pager">
+                <li class="pager01 on"></li>
+                <li class="pager02"></li>
+                <li class="pager03"></li>
+                <li class="pager04"></li>
+            </ul>
+            <!-- 메인 슬라이드 내용 리스트 -->
+            <!-- 
+                현재 표시되는 슬라이드는 li에 on 클래스가 붙음
+            -->
+            <ul class="visual-slide-list">
+                <li class="slide01 on">
+                    <a href="#" class="slide-content">
+                        <p class="slide-sub-title">고양이의 놀이터</p>
+                        <h2 class="slide-title">아름드리<br>
+                            캣타워 & 캣폴</h2>
+                        <p class="slide-desc">높은곳을 좋아하는 고양이에게<br>
+                            꼭 필요한 아이템이에요</p>
+                    </a>
+                </li>
+                <li class="slide02">
+                    <a href="#" class="slide-content">
+                        <p class="slide-sub-title">AREUM</p>
+                        <h2 class="slide-title">댕댕 in<br>
+                            바닷가 기획전</h2>
+                        <p class="slide-desc">반려견과 함께 즐기는 물놀이를<br>
+                            위한 아이템들 총집합!</p>
+                    </a>
+                </li>
+                <li class="slide03">
+                    <a href="#" class="slide-content">
+                        <p class="slide-sub-title">고양이의 생활</p>
+                        <h2 class="slide-title">AREUM<br>
+                            퓨어 벤토나이트</h2>
+                        <p class="slide-desc">먼지가 흩날리지 않는<br>
+                            프리미엄 벤토나이트</p>
+                    </a>
+                </li>
+                <li class="slide04">
+                    <a href="#" class="slide-content">
+                        <p class="slide-sub-title">강아지의 생활</p>
+                        <h2 class="slide-title">풀사이즈<br>
+                            강아지 사각쿠션</h2>
+                        <p class="slide-desc">소형견, 대형견 모두 커버가능한<br>
+                            다양한 쿠션을 둘러보세요</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 
+        visual 섹션 끝
+     -->
+
+    <section class="section best">
+        <!-- 베스트 상품 -->
+        <div class="grid">
+            <!-- 
+                section-title, section-more은
+                배너를 제외한 다른 섹션에도 그대로 재사용됨
+                section-title 안의 내용은 각 섹션에 맞게 바꿀것
+             -->
+            <h2 class="section-title">
+                <span class="title-point">B</span>EST CHOICE
+            </h2>
+            <a href="#" class="section-more">
+                <span class="section-more-plus"></span>
+                <span>더 보기</span>
+            </a>
+            <!-- BEST CHOICE 아이템 -->
+            <ul class="best-list">
+                <li class="best-item">
+                    <div class="content">
+                        <a href="#">
+                            <h2 class="name">편안한 견생을 위한 잇 아이템</h2>
+                            <p class="desc">압도적 포근함! 강아지 쿠션 모음</p>
+                        </a>
+                        <a href="#" class="more"></a>
+                    </div>
+                </li>
+                <li class="best-item">
+                    <div class="content">
+                        <a href="#">
+                            <h2 class="name">우리집 반려묘의 삼시세끼</h2>
+                            <p class="desc">캣&컴포트 전연령 캣푸드</p>
+                        </a>
+                        <a href="#" class="more"></a>
+                    </div>
+                </li>
+                <li class="best-item">
+                    <div class="content">
+                        <a href="#">
+                            <h2 class="name">고양이 원픽! 마성의 캣타워</h2>
+                            <p class="desc">편안한 식빵굽기를 도와줘요</p>
+                        </a>
+                        <a href="#" class="more"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 
+        BEST CHOICE 섹션 끝
+     -->
+
+    <section class="section project">
+        <!-- 최근 프로젝트 -->
+        <div class="grid">
+            <!-- 
+                section-title, section-more은
+                배너를 제외한 다른 섹션에도 그대로 재사용됨
+                section-title 안의 내용은 각 섹션에 맞게 바꿀것
+             -->
+            <h2 class="section-title">
+                <span class="title-point">R</span>ECENT PROJECT
+            </h2>
+            <a href="#" class="section-more">
+                <span class="section-more-plus"></span>
+                <span>더 보기</span>
+            </a>
+            <!-- RECENT PROJECT 내부 배너 -->
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="#" class="content">
+                        <p class="sub-title">
+                            유기견 새 <span>가족</span>찾기 프로젝트
+                        </p>
+                        <h2 class="title">어서와!<br>
+                            마이 댕댕</h2>
+                        <span class="more">자세히 보기</span>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="#" class="content">
+                        <p class="sub-title">반려묘의 건강을 위해</p>
+                        <h2 class="title">물냥이<br>
+                            프로젝트</h2>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="#" class="content">
+                        <p class="sub-title">AREUM × CURO</p>
+                        <h2 class="title">자연식<br>
+                            알고 먹이기</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 
+        RECENT PROJECT 섹션 끝
+     -->
+
+    <section class="section review">
+        <!-- 상품 리뷰 -->
+        <div class="grid">
+            <!-- 
+                section-title, section-more은
+                배너를 제외한 다른 섹션에도 그대로 재사용됨
+                section-title 안의 내용은 각 섹션에 맞게 바꿀것
+             -->
+            <h2 class="section-title">
+                <span class="title-point">P</span>RODUCT REVIEW
+            </h2>
+            <a href="#" class="section-more">
+                <span class="section-more-plus"></span>
+                <span>더 보기</span>
+            </a>
+            <!-- PRODUCT REVIEW 아이템 -->
+            <ul class="review-list">
+                <li class="review-item">
+                    <div class="content">
+                        <h2 class="name">하루채움 츄르 1+1</h2>
+                        <p class="desc">#대박 #기획상품 #집사필수품</p>
+                        <!-- 각 상품 리뷰의 조회수, 좋아요, 더보기 버튼 -->
+                        <div class="info">
+                            <p class="view">3,241</p>
+                            <p class="like">534</p>
+                            <a href="#" class="more">
+                                더 보기
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="review-item">
+                    <div class="content">
+                        <h2 class="name">강아지 관절 영양제</h2>
+                        <p class="desc">#반려견 #건강 #미리미리</p>
+                        <!-- 각 상품 리뷰의 조회수, 좋아요, 더보기 버튼 -->
+                        <div class="info">
+                            <p class="view">2,565</p>
+                            <p class="like">412</p>
+                            <a href="#" class="more">
+                                더 보기
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="review-item">
+                    <div class="content">
+                        <h2 class="name">노즈워크세트 대형</h2>
+                        <p class="desc">#킁킁 #탐색놀이 #즐거워요</p>
+                        <!-- 각 상품 리뷰의 조회수, 좋아요, 더보기 버튼 -->
+                        <div class="info">
+                            <p class="view">5,035</p>
+                            <p class="like">648</p>
+                            <a href="#" class="more">
+                                더 보기 </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 
+        PRODUCT REVIEW 섹션 끝
+     -->
+
+    <section class="banner">
+        <!-- 하단 이벤트 배너 -->
+        <div class="grid">
+            <div class="banner-content">
+                <p class="sub-title">Event</p>
+                <h2 class="title">아름 반려동물 페스티벌가고<br>
+                    참가혜택도 챙기자!</h2>
+                <a href="#" class="more">자세히 보기</a>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        하단 이벤트 배너 끝
+     -->
+
+    <!-- 
+        푸터 시작
+     -->
+    <footer class="footer clear-both">
+        <div class="grid">
+            <div class="footer-content">
+                <div class="left">
+                    <ul class="footer-menu">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer-info">
+                        <span class="company-name">AREUM</span>
+                        <span class="ceo">대표이사 배현지</span>
+                        <span class="company-num">사업자 등록번호 123-45-67890</span>
+                        <p class="footer-address">서울특별시 가상구 하늘로 25길 14 110-801호</p>
+                    </div>
+                    <p class="footer-copyright">Copyright © baehyunji. All rights reserved.</p>
+                    <p class="footer-alert">본 포트폴리오 사이트는 상업적으로 이용이 불가능 합니다.</p>
+                </div>
+                <div class="right">
+                    <p class="footer-support-num">고객센터 02-123-4567</p>
+                    <p class="footer-e-mail">이메일 service@areum.com</p>
+                    <ul class="footer-sns">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="footer-logo"><a href="#">AREUM</a></h2>
+        </div>
+    </footer>
+    <!-- 
+        푸터 끝
+     -->
+</body>
+
+</html>

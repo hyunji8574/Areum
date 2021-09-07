@@ -1,0 +1,254 @@
+/*
+브랜드 소개 페이지 (brand) 스타일 
+*/
+
+/*
+gnb의 BRAND 메뉴에 컬러 효과
+*/
+.gnb .brand {
+    a {
+        color: $color-orange;
+    }
+}
+
+/*
+비주얼 섹션
+*/
+
+.visual {
+    width: 100%;
+    height: 700px;
+    background: url("../img/img_brand/brand-visual.png") no-repeat center;
+    background-size: cover;
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    &-title {
+        position: relative;
+        width: 228px;
+        height: 51px;
+        background: url("../img/img_brand/brand-visual-logo.png") no-repeat 0 0;
+        background-size: contain;
+        text-indent: -9999px;
+        &::after {
+            position: absolute;
+            bottom: -30px;
+            display: block;
+            content: "";
+            width: 21px;
+            height: 2px;
+            background-color: $color-orange;
+            border-radius: 2px;
+        }
+    }
+    &-desc {
+        margin-top: 36px;
+        font-size: 18px;
+        color: $color-black;
+        margin-top: 67px;
+    }
+}
+
+/*
+introduction 섹션
+*/
+
+.introduction {
+    width: 100%;
+    padding: 115px 0;
+    &-desc {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        .point {
+            color: $color-orange;
+        }
+    }
+    &-heart {
+        width: 18px;
+        height: 16px;
+        margin: 35px auto 0 auto;
+        text-indent: -9999px;
+        background: url("../img/icon_heart.png") no-repeat 0 0;
+    }
+    &-list {
+        width: 100%;
+        margin-top: 67px;
+        text-align: center;
+        @include flex-three(105px);
+        li {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    background: url("../img/img_brand/intro-#{$i}.png") no-repeat center 0;
+                }
+            }
+            width: 100%;
+            padding-top: 295px;
+            .title {
+                margin-top: 36px;
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .desc {
+                margin-top: 37px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+/*
+project 섹션
+*/
+
+.project {
+    width: 100%;
+    background-color: $color-back;
+    padding: 175px 0;
+    &-container {
+        width: 100%;
+        height: 438px;
+        margin-bottom: 132px;
+        background-color: $color-white;
+        @for $i from 1 through 2 {
+            &:nth-child(#{$i}) {
+                background: url("../img/img_brand/project-#{$i}.png") no-repeat left 0;
+                background-size: auto 438px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:nth-child(even) {
+            background-position: right 0;
+            & .project-content {
+                // = &-content:nth-child(even)
+                float: left;
+                text-align: right;
+                border-right: 0;
+                border-left: 2px solid $color-orange;
+                & .project-content-text {
+                    left: unset;
+                    right: 75px;
+                    .title::after {
+                        position: absolute;
+                        top: 64px;
+                        left: unset;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    &-content {
+        position: relative;
+        width: 733px;
+        height: 100%;
+        float: right;
+        box-sizing: border-box;
+        background-color: $color-white;
+        z-index: 10;
+        border-right: 2px solid $color-orange;
+        &-text {
+            position: absolute;
+            left: 75px;
+            top: 50%;
+            transform: translateY(-50%);
+            .title {
+                font-size: 30px;
+                font-weight: bold;
+                &::after {
+                    position: absolute;
+                    top: 64px;
+                    left: 0;
+                    display: block;
+                    content: "";
+                    width: 21px;
+                    height: 2px;
+                    background-color: $color-orange;
+                    border-radius: 2px;
+                }
+            }
+            .desc {
+                font-size: 18px;
+                line-height: 30px;
+                margin-top: 64px;
+            }
+            .more {
+                display: inline-block;
+                padding: 12px 43px;
+                box-sizing: border-box;
+                border: 2px solid $color-black;
+                border-radius: 20px;
+                text-align: center;
+                line-height: 16px;
+                margin-top: 44px;
+                transition: color, background-color 0.2s;
+                &:hover {
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+/*
+supporters 섹션
+*/
+
+.supporters {
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+    &-title {
+        font-size: 24px;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 67px;
+        li {
+            margin-right: 75px;
+            &:last-child {
+                margin-right: 0;
+            }
+            .img {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 75%;
+            }
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) .img {
+                    background-image: url("../img/img_brand/supporter-brand-#{$i}.png");
+                }
+            }
+            .img {
+                display: block;
+                width: 275px;
+                height: 275px;
+                border: 2px solid #eef0f4;
+                border-radius: 50%;
+                overflow: hidden;
+                transition: background-size 0.2s;
+                &:hover {
+                    background-size: 80%;
+                }
+            }
+            .txt {
+                display: inline-block;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 23px;
+                transition: color 0.2s;
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+}

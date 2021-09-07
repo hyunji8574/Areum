@@ -1,0 +1,183 @@
+/*
+메인화면 (index) 반응형 레이아웃
+*/
+
+/*
+1200px 이하
+*/
+@media screen and (max-width: 1200px) {
+
+    .best-list {
+        li {
+            .content {
+                .more {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .review-list {
+        li {
+            .content {
+                .info {
+                    .more {
+                        display: block;
+                        text-align: center;
+                        margin-top: 12px;
+                        float: none;
+                        padding-right: 0;
+                        background-position: 70% center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+870px 이하
+*/
+
+@media screen and (max-width: 870px) {
+    .visual-slide-list {
+        left: 30px;
+    }
+
+    .slide-arrow {
+        .left,
+        .right {
+            top: unset;
+            bottom: 10px;
+        }
+    }
+
+    .review-list {
+        li {
+            .content {
+                .info {
+                    .like,
+                    .view {
+                        padding-left: 28px;
+                        margin-right: 10px;
+                        background-position: left center;
+                    }
+                    .more {
+                        text-align: left;
+                        background-position: 60px center;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        .banner-content {
+            right: 30px;
+        }
+    }
+}
+
+// 768px 이하
+@media screen and (max-width: 768px) {
+    .visual-slide-list {
+        li {
+            top: 55%;
+            transform: translateY(-50%);
+            .slide-sub-title {
+                font-size: 14px;
+                &::after {
+                    margin-top: 26px;
+                }
+            }
+
+            .slide-title {
+                font-size: 38px;
+                margin-top: 26px;
+            }
+
+            .slide-desc {
+                font-size: 13px;
+                margin-top: 45px;
+            }
+        }
+    }
+
+    .section {
+        padding: 2.5em 0;
+    }
+
+    .section-more {
+        margin: 20px 0;
+    }
+
+    .best-list {
+        display: block;
+        float: left;
+        li {
+            width: 100%;
+            padding-top: 260px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .project-list {
+        width: 100%;
+        height: auto;
+        display: block;
+        li {
+            height: 236px;
+            background-size: cover;
+            background-position: center;
+            &:nth-child(1) {
+                .content {
+                    .sub-title {
+                        font-size: 18px;
+                        margin-top: 0;
+                    }
+                    .title {
+                        font-size: 30px;
+                        margin-top: 24px;
+                    }
+                    .more {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .review-list {
+        display: block;
+        float: left;
+        li {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .banner {
+        background-size: cover;
+        background-position: center;
+        .banner-content {
+            right: 30px;
+            text-align: right;
+            .sub-title {
+                font-size: 20px;
+                &::after {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            .title {
+                margin-top: 40px;
+                font-size: 26px;
+            }
+        }
+    }
+}

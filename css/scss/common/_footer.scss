@@ -1,0 +1,185 @@
+/*
+footer
+*/
+
+.footer {
+    width: 100%;
+    // height: 270px;
+    background-color: $color-black;
+    padding: 40px 0;
+    // box-sizing: border-box;
+    color: $color-white;
+    .footer-content {
+        position: relative;
+        width: 930px;
+        float: left;
+        .left {
+            float: left;
+            .footer-menu {
+                li {
+                    display: inline-block;
+                    margin-right: 55px;
+                    font-size: 18px;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        color: $color-white;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .footer-info {
+                margin-top: 48px;
+                span {
+                    display: inline-block;
+                    margin-right: 45px;
+                }
+            }
+            .footer-copyright {
+                margin-top: 48px;
+            }
+        }
+        .right {
+            float: right;
+            text-align: right;
+            margin-right: 45px;
+            .footer-support-num {
+                margin-top: 12px;
+            }
+            .footer-e-mail {
+                margin-top: 12px;
+            }
+            .footer-sns {
+                margin-top: 70px;
+                float: right;
+                li {
+                    float: left;
+                    margin-right: 16px;
+                    width: 33px;
+                    height: 33px;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:nth-child(1) {
+                        background: url("../img/icon_facebook.png") no-repeat center;
+                        background-size: contain;
+                    }
+                    &:nth-child(2) {
+                        background: url("../img/icon_instagram.png") no-repeat center;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: #727985;
+            top: 0;
+            right: 0;
+            border-radius: 2px;
+        }
+    }
+    .footer-logo {
+        width: 120px;
+        height: 27px;
+        float: left;
+        margin-top: 70px;
+        margin-left: 66px;
+        background-image: url("../img/logo_footer.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+    }
+}
+
+/*
+footer 반응형 레이아웃
+*/
+
+// 1200px 이하
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        .footer-content {
+            width: 100%;
+            margin-top: 60px;
+            &::after {
+                display: none;
+            }
+            .right {
+                margin-right: 0;
+            }
+        }
+        .footer-logo {
+            position: relative;
+            top: 0;
+            float: none;
+            margin: 0 auto;
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+// 870px 이하
+
+@media screen and (max-width: 870px) {
+    .footer {
+        .footer-content {
+            .left {
+                width: 100%;
+                text-align: left;
+                font-size: 13px;
+                .footer-menu {
+                    li {
+                        width: 20%;
+                        margin-right: 5%;
+                        font-size: 14px;
+                        text-align: center;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .footer-info, .footer-copyright {
+                    margin-top: 20px;
+                }
+            }
+            .right {
+                position: relative;
+                width: 100%;
+                text-align: left;
+                margin-top: 20px;
+                font-size: 13px;
+                .footer-sns {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+        .footer-logo {
+            width: 96px;
+            height: 20.8px;
+            background-size: contain;
+        }
+    }
+}

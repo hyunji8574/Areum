@@ -1,0 +1,14 @@
+
+/*
+
+브랜드 소개 페이지 (brand) 스타일 통합 시트
+css 폴더 내에 brand.css로 컴파일됨
+
+*/
+
+@import "./common/reset";
+@import "./common/common";
+@import "./common/header";
+@import "./common/footer";
+@import "./style/brand-layout";
+@import "./style/brand-layout-responsive"
