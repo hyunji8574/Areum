@@ -29,4 +29,4 @@
 ### 추가 사항
 
 - brand.scss, index.scss는 통합용 파일로, 다른 scss파일을 모두 묶어 하나의 css파일로 내보내는 역할을 합니다.
-- -responsive가 붙은 파일은 반응형을 위한 파일입니다.
+- -responsive가 붙은 파일은 반응형 을 위한 파일입니다.
